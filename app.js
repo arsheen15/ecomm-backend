@@ -19,7 +19,7 @@ app.use(morgan('dev'))
 
 let MONGODB_URL = "mongodb+srv://arsheenharihar:zkU3PIt37ZoViLA1@cluster0.it1ok.mongodb.net/?retryWrites=true&w=majority"
 
-mongoose.connect('mongodb://127.0.0.1:27017/kleproject')
+mongoose.connect(MONGODB_URL)
 .then(()=>{
     console.log("DB is connected")
 }).catch((err)=>{
